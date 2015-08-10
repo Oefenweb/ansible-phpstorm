@@ -1,0 +1,27 @@
+# tasks file for phpstorm
+---
+- name: create (download) directory
+  file:
+    path: "{{ phpstorm_downloads_path }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  tags: [configuration, phpstorm, phpstorm-download]
+
+- name: download
+  get_url:
+    url: "http://download-cf.jetbrains.com/webide/PhpStorm-{{ phpstorm_version }}.tar.gz"
+    dest: "{{ phpstorm_downloads_path }}/PhpStorm-{{ phpstorm_version }}.tar.gz"
+    owner: root
+    group: root
+    mode: 0644
+  tags: [configuration, phpstorm, phpstorm-download]
+
+- name: install
+  unarchive:
+    src: "{{ phpstorm_downloads_path }}/PhpStorm-{{ phpstorm_version }}.tar.gz"
+    dest: "{{ phpstorm_install_prefix }}"
+    creates: "{{ phpstorm_install_prefix }}/phpstorm-{{ phpstorm_version }}"
+    copy: false
+  tags: [configuration, phpstorm, phpstorm-install]

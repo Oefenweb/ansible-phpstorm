@@ -1,0 +1,3 @@
+# vars file for phpstorm
+---
+phpstorm_downloads_path: /var/lib/ansible/phpstorm/downloads
