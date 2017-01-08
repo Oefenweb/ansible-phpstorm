@@ -1,4 +1,4 @@
 # defaults file for phpstorm
 ---
-phpstorm_version: 2016.1.1
+phpstorm_version: 2016.3.2
 phpstorm_install_prefix: /opt

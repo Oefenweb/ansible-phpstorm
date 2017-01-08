@@ -10,7 +10,7 @@ None
 
 #### Variables
 
-* `phpstorm_version` [default: `2016.1.1`]: [Version](https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases) to install
+* `phpstorm_version` [default: `2016.3.2`]: [Version](https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases) to install
 * `phpstorm_install_prefix` [default: `/opt`]: Install prefix
 
 ## Dependencies
