@@ -10,7 +10,7 @@ None
 
 #### Variables
 
-* `phpstorm_version` [default: `2018.3.3`]: [Version](https://confluence.jetbrains.com/display/PhpStorm/Previous+PhpStorm+Releases) to install
+* `phpstorm_version` [default: `2019.1`]: [Version](https://www.jetbrains.com/phpstorm/download/index.html#section=linux) to install
 * `phpstorm_install_prefix` [default: `/opt`]: Install prefix
 
 ## Dependencies
