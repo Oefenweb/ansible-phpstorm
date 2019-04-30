@@ -1,6 +1,7 @@
 ## phpstorm
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-phpstorm.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-phpstorm) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-phpstorm-blue.svg)](https://galaxy.ansible.com/Oefenweb/phpstorm)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-phpstorm.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-phpstorm)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-phpstorm-blue.svg)](https://galaxy.ansible.com/Oefenweb/phpstorm)
 
 Set up [PhpStorm](https://www.jetbrains.com/phpstorm/).
 
