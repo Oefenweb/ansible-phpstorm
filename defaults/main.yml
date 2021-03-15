@@ -1,4 +1,4 @@
-# defaults file for phpstorm
+# defaults file
 ---
 phpstorm_version: 2019.1
 phpstorm_install_prefix: /opt
