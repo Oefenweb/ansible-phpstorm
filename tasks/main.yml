@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: create (download) directory
-  file:
+  ansible.builtin.file:
     path: "{{ phpstorm_downloads_path }}"
     state: directory
     owner: root
@@ -13,7 +13,7 @@
     - phpstorm-download
 
 - name: download
-  get_url:
+  ansible.builtin.get_url:
     url: "http://download-cf.jetbrains.com/webide/PhpStorm-{{ phpstorm_version }}.tar.gz"
     dest: "{{ phpstorm_downloads_path }}/PhpStorm-{{ phpstorm_version }}.tar.gz"
     owner: root
@@ -25,7 +25,7 @@
     - phpstorm-downloads
 
 - name: install
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ phpstorm_downloads_path }}/PhpStorm-{{ phpstorm_version }}.tar.gz"
     dest: "{{ phpstorm_install_prefix }}"
     creates: "{{ phpstorm_install_prefix }}/phpstorm-{{ phpstorm_version }}"
