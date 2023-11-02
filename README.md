@@ -24,7 +24,7 @@ None
 ---
 - hosts: all
   roles:
-    - phpstorm
+    - oefenweb.phpstorm
 ```
 
 #### License
