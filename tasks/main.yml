@@ -14,7 +14,7 @@
 
 - name: download
   ansible.builtin.get_url:
-    url: "http://download-cf.jetbrains.com/webide/PhpStorm-{{ phpstorm_version }}.tar.gz"
+    url: "https://download-cdn.jetbrains.com/webide/PhpStorm-{{ phpstorm_version }}.tar.gz"
     dest: "{{ phpstorm_downloads_path }}/PhpStorm-{{ phpstorm_version }}.tar.gz"
     owner: root
     group: root
